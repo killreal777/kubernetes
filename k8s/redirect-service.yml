@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: redirect-service
+spec:
+  selector:
+    matchLabels:
+      app: redirect-service
+  template:
+    metadata:
+      labels:
+        app: redirect-service
+    spec:
+      containers:
+        - name: redirect-service
+          image: killreal777/redirect-service
+          ports:
+            - containerPort: 8080
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: redirect-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: redirect-service
+  ports:
+    - port: 8080
+      targetPort: 8080

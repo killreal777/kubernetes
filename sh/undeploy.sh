@@ -1,0 +1,1 @@
+kubectl delete -f ../k8s/hello-service.yml -f ../k8s/redirect-service.yml -f ../k8s/nginx.yml
