@@ -11,8 +11,10 @@
     <url>https://maven.apache.org</url>
 
     <modules>
-        <module>hello-service</module>
         <module>redirect-service</module>
+        <module>hello-service</module>
+        <module>tomato-service</module>
+        <module>tomato-service-api</module>
     </modules>
 
     <properties>

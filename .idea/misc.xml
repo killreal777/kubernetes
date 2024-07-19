@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/eureka-client-new/pom.xml" />
         <option value="$PROJECT_DIR$/testt/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-client-api/pom.xml" />
+        <option value="$PROJECT_DIR$/tomato-service-api/pom.xml" />
+        <option value="$PROJECT_DIR$/tomato-service/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
